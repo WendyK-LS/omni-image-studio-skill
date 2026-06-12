@@ -41,7 +41,8 @@ This skill separates the workflow into two layers:
 ├── assets/
 │   └── platform_presets.json     # Platform and size presets
 ├── examples/
-│   └── bilibili-cover.md         # Example workflow
+│   ├── bilibili-cover.md         # Example workflow
+│   └── x-twitter-source-image-workflow.md
 ├── scripts/
 │   ├── omni_image.py             # Image generation helper
 │   └── fit_export.py             # Exact-size export helper
@@ -120,6 +121,11 @@ python scripts/fit_export.py outputs/images/example/result_01.png \
   --preset video_cover \
   --mode cover
 ```
+
+## Examples
+
+- [Bilibili cover workflow](examples/bilibili-cover.md)
+- [X/Twitter source image workflow](examples/x-twitter-source-image-workflow.md)
 
 ## Recommended Workflow
 
