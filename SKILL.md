@@ -45,14 +45,6 @@ export OMNI_IMAGE_PRESETS="./assets/platform_presets.json"
 
 `OMNI_IMAGE_BASE_URL` must be set to the target machine's own OpenAI-compatible image API URL. Deployments should not assume a fixed provider URL.
 
-On Windows PowerShell:
-
-```powershell
-$env:OMNI_IMAGE_API_KEY_FILE = "D:\OpenClaw\.openclaw\secrets\image-api-key.txt"
-$env:OMNI_IMAGE_BASE_URL = "https://your-openai-compatible-image-api.example.com/v1"
-$env:OMNI_IMAGE_OUTPUT_ROOT = "E:\OpenClaw\.openclaw\workspace\outputs\images"
-```
-
 ## Workflow
 
 1. Identify the image purpose, target platform, preset, required text, asset inputs, and delivery format.
