@@ -86,14 +86,6 @@ Optional variables:
 export OMNI_IMAGE_PRESETS="./assets/platform_presets.json"
 ```
 
-PowerShell example:
-
-```powershell
-$env:OMNI_IMAGE_API_KEY_FILE = "D:\OpenClaw\.openclaw\secrets\image-api-key.txt"
-$env:OMNI_IMAGE_BASE_URL = "https://your-openai-compatible-image-api.example.com/v1"
-$env:OMNI_IMAGE_OUTPUT_ROOT = "E:\OpenClaw\.openclaw\workspace\outputs\images"
-```
-
 ## Quick Start
 
 List all supported platform presets:
