@@ -94,12 +94,6 @@ $env:OMNI_IMAGE_BASE_URL = "https://your-openai-compatible-image-api.example.com
 $env:OMNI_IMAGE_OUTPUT_ROOT = "E:\OpenClaw\.openclaw\workspace\outputs\images"
 ```
 
-If you use 4sAPI, the Base URL is commonly:
-
-```bash
-export OMNI_IMAGE_BASE_URL="https://4sapi.com/v1"
-```
-
 ## Quick Start
 
 List all supported platform presets:
