@@ -43,7 +43,7 @@ export OMNI_IMAGE_OUTPUT_ROOT="./outputs/images"
 export OMNI_IMAGE_PRESETS="./assets/platform_presets.json"
 ```
 
-`OMNI_IMAGE_BASE_URL` must be set to the target machine's own OpenAI-compatible image API URL. For example, 4sAPI commonly uses `https://4sapi.com/v1`, but deployments should not assume that URL.
+`OMNI_IMAGE_BASE_URL` must be set to the target machine's own OpenAI-compatible image API URL. Deployments should not assume a fixed provider URL.
 
 On Windows PowerShell:
 
@@ -119,9 +119,9 @@ This skill is provider-agnostic if the provider supports OpenAI-compatible endpo
 - `POST /images/generations`
 - optional fallback: `POST /chat/completions`
 
-Known tested provider/model combination example:
+Provider/model configuration example:
 
-- Base URL: set by `OMNI_IMAGE_BASE_URL`; tested with 4sAPI `https://4sapi.com/v1`
-- model: `gpt-image-2`
+- Base URL: set by `OMNI_IMAGE_BASE_URL`
+- model: set with the `--model` argument, for example `gpt-image-2` when supported by your provider
 
-For other machines, replace the Base URL and model name with that machine's own compatible image provider values.
+For each machine, replace the Base URL and model name with that machine's own compatible image provider values.
